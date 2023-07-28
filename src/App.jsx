@@ -1,9 +1,13 @@
+import { useState } from "react"
+import Alunos from "./components/Alunos"
 
 function App() {
 
+  const[nome, setNome] = useState('Marcos Vinicius');
+
   return (
     <div>
-      Teste
+      <Alunos nome={nome} mudaNome={setNome}/>
     </div>
   )
 }
